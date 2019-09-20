@@ -1,0 +1,11 @@
+<%=form_for article do |f|%>
+<%=f.label:title,"タイトル"%>
+ <div class="form-group padding-top-15per">
+<%=f.text_field:title ,class:'form-control'%>
+</div>
+<%=f.label:body,"本文"%>
+ <div class="form-group padding-top-15per">
+<%=f.text_area:body ,rows: 10,class:'form-control'%>
+</div>
+<%=f.submit class:'btn btn-success'%>
+<%end%>
